@@ -1,0 +1,13 @@
+language: node_js
+
+node_js:
+  - 14.15.4
+
+install:
+  - npm ci
+
+cache: npm
+
+script:
+  - npm test
+  - npm run build
